@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library [
+    <!ELEMENT library (book+)>
+    <!ELEMENT book (article:title, person:author, article:price)>
+    <!ATTLIST library
+        xmlns CDATA #IMPLIED
+        xmlns:article CDATA #IMPLIED
+        xmlns:person CDATA #IMPLIED>
+    <!ATTLIST book
+        article:id ID #REQUIRED>
+
+    <!ELEMENT article:title (#PCDATA)>
+    <!ELEMENT person:author (#PCDATA)>
+    <!ELEMENT article:price (#PCDATA)>
+]>
+<library xmlns="https://aptechvietnam.com.vn/"
+         xmlns:article="https://article.aptechvietnam.com.vn/"
+         xmlns:person="https://biolography.aptechvietnam.com.vn/">
+    
+    <book article:id="B001">
+        <article:title>The Firm</article:title>
+        <person:author>John Grisham</person:author>
+        <article:price>15.99</article:price>
+    </book>
+
+    <book article:id="B002">
+        <article:title>A Time to Kill</article:title>
+        <person:author>John Grisham</person:author>
+        <article:price>12.50</article:price>
+    </book>
+
+    <book article:id="B003">
+        <article:title>The Pelican Brief</article:title>
+        <person:author>John Grisham</person:author>
+        <article:price>18.75</article:price>
+    </book>
+
+</library>

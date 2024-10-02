@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>The Firm</title>
+        <author>John Grisham</author>
+        <price>15.99</price>
+    </book>
+    <book>
+        <title>A Time to Kill</title>
+        <author>John Grisham</author>
+        <price>12.50</price>
+    </book>
+    <book>
+        <title>The Pelican Brief</title>
+        <author>John Grisham</author>
+        <price>18.75</price>
+    </book>
+</library>
