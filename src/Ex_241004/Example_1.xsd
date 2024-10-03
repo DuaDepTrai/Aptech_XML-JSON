@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:article="https://article.aptechvietnam.com.vn/"
+           xmlns:person="https://biolography.aptechvietnam.com.vn/"
+           targetNamespace="https://aptechvietnam.com.vn/"
+           elementFormDefault="qualified">
+  
+  <!-- Định nghĩa cho phần tử library -->
+  <xs:element name="library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="book" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="article:title"/>
+              <xs:element ref="person:author"/>
+              <xs:element ref="article:price"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID" use="required" form="qualified"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Định nghĩa cho phần tử trong namespace article -->
+  <xs:element name="title" type="xs:string" xmlns:article="https://article.aptechvietnam.com.vn/"/>
+  <xs:element name="price" type="xs:string" xmlns:article="https://article.aptechvietnam.com.vn/"/>
+
+  <!-- Định nghĩa cho phần tử trong namespace person -->
+  <xs:element name="author" type="xs:string" xmlns:person="https://biolography.aptechvietnam.com.vn/"/>
+  
+</xs:schema>
