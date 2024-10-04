@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT batdongsan (ds-dayly, ds-chusohuu, ds-taisan, ds-canho)*>
+<!ELEMENT ds-dayly EMPTY>
+<!ELEMENT ds-chusohuu EMPTY>
+<!ELEMENT ds-taisan EMPTY>
+<!ELEMENT ds-canho EMPTY>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE batdongsan [
+    <!ELEMENT batdongsan (ds-dayly, ds-chusohuu, ds-taisan, ds-canho)*>
+    <!ELEMENT ds-dayly EMPTY>
+    <!ELEMENT ds-chusohuu EMPTY>
+    <!ELEMENT ds-taisan EMPTY>
+    <!ELEMENT ds-canho EMPTY>
+]>
+
+<batdongsan>
+    <ds-dayly></ds-dayly>
+    <ds-chusohuu></ds-chusohuu>
+    <ds-taisan></ds-taisan>
+    <ds-canho></ds-canho>
+</batdongsan>

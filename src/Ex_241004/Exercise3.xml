@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE batdongsan SYSTEM "Exercise3.dtd">
+
+<batdongsan>
+    <ds-dayly></ds-dayly>
+    <ds-chusohuu></ds-chusohuu>
+    <ds-taisan></ds-taisan>
+    <ds-canho></ds-canho>
+</batdongsan>

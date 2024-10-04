@@ -1,0 +1,13 @@
+<!ELEMENT mobile (Company, Model, Price, Accesories)>
+<!ELEMENT Company (#PCDATA)>
+<!ELEMENT Model (#PCDATA)>
+<!ATTLIST Model
+    type CDATA #IMPLIED
+>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT Accesories (#PCDATA)>
+
+<!-- Entity definitions for accessories -->
+<!ENTITY CH "Charger">
+<!ENTITY HP "Headphone">
+<!ENTITY SK "Speaker">

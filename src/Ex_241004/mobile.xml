@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mobile [
+    <!ELEMENT mobile (Company, Model, Price, Accesories, Sex)>
+    <!ELEMENT Company (#PCDATA)>
+    <!ELEMENT Model (#PCDATA)>
+    <!ATTLIST Model
+        type CDATA #IMPLIED
+    >
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT Accesories (#PCDATA)>
+    <!ELEMENT Sex EMPTY>
+    <!ATTLIST Sex Gender (Nam|Nu|Other) "Nam" >
+    
+    <!-- Entity definitions for accessories -->
+    <!ENTITY CH "Charger">
+    <!ENTITY HP "Headphone">
+    <!ENTITY SK "Speaker">
+]>
+
+<mobile>
+    <Company>APTECH</Company>
+    <Model type="Camera">XXXX</Model>
+    <Price>1200$</Price>
+    <Accesories>&CH; &HP; &SK;</Accesories>
+    <Sex Gender="Nam" />
+</mobile>
