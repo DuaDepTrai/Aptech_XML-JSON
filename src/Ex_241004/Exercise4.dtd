@@ -7,11 +7,13 @@
 <!ELEMENT phone #PCDATA>
 
 <!ELEMENT ds-chusohuu (name)>
+<!ATTLIST ds-chusohuu id ID #REQUIRED>
 
 <!ELEMENT ds-taisan (name, description, number_of_flats, features)>
 <!ELEMENT description #PCDATA>
 <!ELEMENT number_of_flats #PCDATA>
 <!ELEMENT features #PCDATA>
+<!ATTLIST ds-taisan id ID #REQUIRED>
 <!ATTLIST ds-taisan owner_reference IDREF #REQUIRED>
 
 <!ELEMENT ds-canho (name, description, features)>

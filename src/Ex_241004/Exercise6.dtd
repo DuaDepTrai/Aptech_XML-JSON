@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT bieu_thuc (phan_so | tich)+>
+<!ELEMENT phan_so EMPTY>
+<!ATTLIST phan_so
+    tu_so CDATA #REQUIRED
+    mau_so CDATA #REQUIRED
+>
+<!ELEMENT tich (phan_so+)>

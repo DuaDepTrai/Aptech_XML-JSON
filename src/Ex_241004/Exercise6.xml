@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bieu_thuc SYSTEM "fraction_expression.dtd">
+
+<bieu_thuc>
+    <!-- Phân số đơn giản -->
+    <phan_so tu_so="3" mau_so="6"/>
+    
+    <!-- Tích của 2 phân số -->
+    <tich>
+        <phan_so tu_so="5" mau_so="9"/>
+        <phan_so tu_so="2" mau_so="5"/>
+    </tich>
+    
+    <!-- Phân số đơn giản -->
+    <phan_so tu_so="-100" mau_so="4"/>
+
+    <!-- Tích của 2 phân số -->
+    <tich>
+        <phan_so tu_so="11" mau_so="2"/>
+        <phan_so tu_so="5" mau_so="7"/>
+    </tich>
+</bieu_thuc>

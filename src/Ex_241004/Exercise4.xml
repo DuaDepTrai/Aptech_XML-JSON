@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE batdongsan SYSTEM "Exercise4.dtd">
+
+<batdongsan>
+    <!-- Danh sách đại lý -->
+    <ds-dayly>
+        <name>Đại Lý Bất Động Sản Hà Nội</name>
+        <email>bdshanoi@gmail.com</email>
+        <phone>0901234567</phone>
+    </ds-dayly>
+    
+    <!-- Danh sách chủ sở hữu -->
+    <ds-chusohuu id="CSH001">
+        <name>Nguyễn Văn A</name>
+    </ds-chusohuu>
+    
+    <!-- Danh sách tài sản -->
+    <ds-taisan id="TS001" owner_reference="CSH001">
+        <name>Tòa nhà ABC</name>
+        <description>Tòa nhà 10 tầng, vị trí đẹp gần trung tâm.</description>
+        <number_of_flats>50</number_of_flats>
+        <features>Bể bơi, gym, khu vui chơi trẻ em</features>
+    </ds-taisan>
+    
+    <!-- Danh sách căn hộ -->
+    <ds-canho property_reference="TS001">
+        <name>Căn hộ 1</name>
+        <description>Căn hộ tầng 2, diện tích 80m2</description>
+        <features>2 phòng ngủ, 1 phòng khách</features>
+    </ds-canho>
+    <ds-canho property_reference="TS001">
+        <name>Căn hộ 2</name>
+        <description>Căn hộ tầng 3, diện tích 100m2</description>
+        <features>3 phòng ngủ, 1 phòng khách</features>
+    </ds-canho>
+</batdongsan>

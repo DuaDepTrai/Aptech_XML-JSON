@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT phieu_diem (hoc_sinh, diem_so+)>
+<!ELEMENT hoc_sinh EMPTY>
+<!ATTLIST hoc_sinh
+    ho_ten CDATA #REQUIRED
+    ngay_sinh CDATA #REQUIRED
+    xep_loai (Gioi | Kha | TrungBinh | Yeu) #REQUIRED
+>
+
+<!ELEMENT diem_so EMPTY>
+<!ATTLIST diem_so
+    ten_mon_hoc CDATA #REQUIRED
+    gia_tri FLOAT #REQUIRED
+>
