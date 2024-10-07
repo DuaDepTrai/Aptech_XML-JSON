@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.com/sinhvien"
+           xmlns="http://www.example.com/sinhvien"
+           elementFormDefault="qualified">
+    
+    <xs:element name="SinhVien">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MaSV" type="xs:string"/>
+                <xs:element name="TenSV" type="xs:string"/>
+                <xs:element name="Tuoi" type="xs:int"/>
+                <xs:element name="GioiTinh" type="GioiTinh"/> <!-- Correctly referencing the simple type -->
+                <xs:element name="DiaChi" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="GioiTinh">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Nam"/>
+            <xs:enumeration value="Nu"/>
+            <xs:enumeration value="Other"/>
+            <xs:whiteSpace value="collapse"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

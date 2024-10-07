@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Eg1.xsl" type="text/xsl"?>
+
+<SinhVien
+        xmlns="http://www.example.com/sinhvien"  
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.example.com/sinhvien Eg1.xsd">
+    <MaSV>SV001</MaSV>
+    <TenSV>Nguyen Van A</TenSV>
+    <Tuoi>18</Tuoi>
+    <GioiTinh>Nam</GioiTinh>
+    <DiaChi>15 Giai Phong</DiaChi>
+</SinhVien>
