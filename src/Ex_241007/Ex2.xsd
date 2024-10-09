@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <!-- Định nghĩa kiểu số điện thoại với định dạng cụ thể -->
+    <xs:simpleType name="PhoneType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}-\d{3}-\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Định nghĩa phần tử gốc -->
+    <xs:element name="DsSinhVien">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Danh sách các sinh viên -->
+                <xs:element name="SinhVien" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="hoten" type="xs:string"/>
+                            <xs:element name="masv" type="xs:string"/>
+                            <xs:element name="ngaysinh" type="xs:string"/>
+                            <xs:element name="gioitinh" type="xs:string"/>
+                            <xs:element name="sodienthoai" type="PhoneType"/> <!-- Sử dụng PhoneType -->
+                            <xs:element name="malop" type="xs:string"/> <!-- Mã lớp tham chiếu -->
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Danh sách các lớp học -->
+                <xs:element name="Lop" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tenlop" type="xs:string"/>
+                            <xs:element name="malop" type="xs:string"/> <!-- Mã lớp -->
+                            <xs:element name="hoten_gvcn" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Định nghĩa khóa chính cho mã lớp trong bảng Lop -->
+        <xs:key name="LopKey">
+            <xs:selector xpath="Lop"/>
+            <xs:field xpath="malop"/>
+        </xs:key>
+
+        <!-- Định nghĩa tham chiếu khóa ngoại cho mã lớp trong bảng SinhVien -->
+        <xs:keyref name="SinhVienLopRef" refer="LopKey">
+            <xs:selector xpath="SinhVien"/>
+            <xs:field xpath="malop"/>
+        </xs:keyref>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Ex1.css"?>
+
+<tho>
+    <title>SAO</title>
+    <doan1>Một ngôi <strong>sao</strong> vừa rơi<br/>
+        Vụt tắt trên bầu trời<br/>
+        Hay là tên người ấy<br/>
+        Vụt tắt ở trong tôi?</doan1>
+
+ <doan2>Vẫn thấy trên bầu trời<br/>
+        Có muôn vàn <strong>sao</strong> sáng<br/>
+        Mà ở trong lòng tôi<br/>
+        Như một hành lang vắng</doan2>
+
+ <doan3>Một ngôi <strong>sao</strong> vừa tắt<br/>
+        Bầu trời vẫn không buồn<br/>
+        <strong>Sao</strong> tên người ấy tắt<br/>
+        Trong lòng tôi cô đơn?</doan3>
+</tho>

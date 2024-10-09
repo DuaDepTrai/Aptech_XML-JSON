@@ -1,0 +1,28 @@
+/* Định dạng cho tiêu đề bài thơ */
+title {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Định dạng cho các đoạn thơ */
+doan1, doan2, doan3 {
+    display: block;
+    font-style: italic;
+    color: inherit; /* Giữ nguyên màu cho từng đoạn */
+    margin-bottom: 20px; /* Tăng khoảng cách giữa các khổ */
+    white-space: pre-line;
+}
+
+/* Màu sắc cho từng khổ thơ */
+doan1 { color: red; }
+doan2 { color: blue; }
+doan3 { color: green; }
+
+/* Định dạng cho từ "sao" */
+strong {
+    font-weight: bold;
+    color: brown;
+}

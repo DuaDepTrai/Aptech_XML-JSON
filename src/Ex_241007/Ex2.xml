@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ex2.xsl" type="text/xsl"?>
+
+<DsSinhVien xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="Ex2.xsd">
+    <SinhVien>
+        <hoten>Nguyen Van A</hoten>
+        <masv>SV001</masv>
+        <ngaysinh>01/01/2002</ngaysinh>
+        <gioitinh>Nam</gioitinh>
+        <sodienthoai>0987-654-321</sodienthoai>
+        <malop>A01</malop>
+    </SinhVien>
+    <SinhVien>
+        <hoten>Tran Thi B</hoten>
+        <masv>SV002</masv>
+        <ngaysinh>01/02/2003</ngaysinh>
+        <gioitinh>Nu</gioitinh>
+        <sodienthoai>0987-654-322</sodienthoai>
+        <malop>A02</malop>
+    </SinhVien>
+    <SinhVien>
+        <hoten>Hoang Van C</hoten>
+        <masv>SV003</masv>
+        <ngaysinh>01/03/2004</ngaysinh>
+        <gioitinh>Nam</gioitinh>
+        <sodienthoai>0987-654-323</sodienthoai>
+        <malop>A01</malop>
+    </SinhVien>
+    <SinhVien>
+        <hoten>Pham Thi D</hoten>
+        <masv>SV004</masv>
+        <ngaysinh>01/04/2005</ngaysinh>
+        <gioitinh>Nu</gioitinh>
+        <sodienthoai>0987-654-324</sodienthoai>
+        <malop>A02</malop>
+    </SinhVien>
+    <SinhVien>
+        <hoten>Le Van E</hoten>
+        <masv>SV005</masv>
+        <ngaysinh>01/05/2006</ngaysinh>
+        <gioitinh>Nam</gioitinh>
+        <sodienthoai>0987-654-325</sodienthoai>
+        <malop>A01</malop>
+    </SinhVien>
+    <Lop>
+        <tenlop>Lop A01</tenlop>
+        <malop>A01</malop>
+        <hoten_gvcn>Dang Van G</hoten_gvcn>
+    </Lop>
+    <Lop>
+        <tenlop>Lop A02</tenlop>
+        <malop>A02</malop>
+        <hoten_gvcn>Luu Van H</hoten_gvcn>
+    </Lop>
+</DsSinhVien>
