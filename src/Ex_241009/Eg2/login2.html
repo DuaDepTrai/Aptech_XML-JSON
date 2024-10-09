@@ -12,7 +12,9 @@
 
             localStorage.setItem('user', JSON.stringify({username, fullname, password}));
 
-            window.location.href = 'confirm2.html';
+            if (confirm("Bạn có muốn chuyển tới trang xác nhận không?")) {
+                window.location.href = "confirm.html";
+            }
         }
     </script>
 </head>
