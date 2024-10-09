@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+    <script>
+        function displayUserInfo() {
+            // Lấy thông tin user từ localStorage
+            const user = JSON.parse(localStorage.getItem("loggedInUser"));
+
+            if (user) {
+                // Hiển thị thông tin user đã đăng nhập
+                document.getElementById("username").textContent = user.username;
+                document.getElementById("fullname").textContent = user.fullname;
+            } else {
+                alert("Không có thông tin user!");
+            }
+        }
+    </script>
+</head>
+<body onload="displayUserInfo()">
+    <h2>User Information</h2>
+    <p><strong>Username:</strong> <span id="username"></span></p>
+    <p><strong>Full Name:</strong> <span id="fullname"></span></p>
+</body>
+</html>

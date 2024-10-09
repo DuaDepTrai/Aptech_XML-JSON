@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<companyname>
+    <companyname>Aptech</companyname>
+    <ceo>Tung</ceo>
+    <employees>
+        <employee>
+            <code>NV001</code>
+            <name>Nguyen A</name>
+            <address>HN</address>
+        </employee>
+        <employee>
+            <code>NV002</code>
+            <name>Tran B</name>
+            <address>HN</address>
+        </employee>
+    </employees>
+</companyname>

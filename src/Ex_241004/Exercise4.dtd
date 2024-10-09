@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<!ELEMENT batdongsan (ds-dayly, ds-chusohuu, ds-taisan, ds-canho)*>
+<!ELEMENT batdongsan (ds-dayly, ds-chusohuu+, ds-taisan+, ds-canho+)>
 <!ELEMENT ds-dayly (name, email, phone)>
-<!ELEMENT name #PCDATA>
-<!ELEMENT email #PCDATA>
-<!ELEMENT phone #PCDATA>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
 
 <!ELEMENT ds-chusohuu (name)>
 <!ATTLIST ds-chusohuu id ID #REQUIRED>
 
 <!ELEMENT ds-taisan (name, description, number_of_flats, features)>
-<!ELEMENT description #PCDATA>
-<!ELEMENT number_of_flats #PCDATA>
-<!ELEMENT features #PCDATA>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT number_of_flats (#PCDATA)>
+<!ELEMENT features (#PCDATA)>
 <!ATTLIST ds-taisan id ID #REQUIRED>
 <!ATTLIST ds-taisan owner_reference IDREF #REQUIRED>
 

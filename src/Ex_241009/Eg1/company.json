@@ -1,0 +1,20 @@
+{
+	"companyname": {
+		"companyname": "Aptech",
+		"ceo": "Tung",
+		"employees": {
+			"employee": [
+				{
+					"code": "NV001",
+					"name": "Nguyen A",
+					"address": "HN"
+				},
+				{
+					"code": "NV002",
+					"name": "Tran B",
+					"address": "HN"
+				}
+			]
+		}
+	}
+}

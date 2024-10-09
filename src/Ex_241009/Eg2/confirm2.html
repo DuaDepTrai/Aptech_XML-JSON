@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <script>
+        function displayUserInfo() {
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (user) {
+                document.getElementById('userInfo').innerText = `Logged in as: ${user.fullname} (${user.username})`;
+            } else {
+                document.getElementById('userInfo').innerText = 'No user is logged in.';
+            }
+        }
+    </script>
+</head>
+<body onload="displayUserInfo()">
+    <h1>CONFIRMATION</h1>
+    <p id="userInfo"></p>
+    <button onclick="localStorage.clear(); window.location.href = 'login2.html'">LOGOUT</button>
+</body>
+</html>
