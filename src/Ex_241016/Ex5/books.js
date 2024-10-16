@@ -63,10 +63,12 @@ function saveBooks(event) {
 
 // Xóa sách khỏi danh sách
 function deleteBook(index) {
-    booksData.splice(index, 1); // Xóa sách theo index
+    let books = JSON.parse(localStorage.getItem("books")) || [];
+
+    books.splice(index, 1); // Xóa sách theo index
 
     // Lưu lại vào LocalStorage
-    localStorage.setItem('booksInfo', JSON.stringify(booksData));
+    localStorage.setItem('books', JSON.stringify(books));
 
     displayBooks(); // Cập nhật lại giao diện
 }
