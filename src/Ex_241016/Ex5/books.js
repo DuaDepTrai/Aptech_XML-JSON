@@ -26,7 +26,6 @@ function displayBooks() {
 
 // Lưu sách vào LocalStorage
 function saveBooks(event) {
-    event.preventDefault(); // Ngăn chặn hành động mặc định của form
 
     // Lấy giá trị từ các trường input
     const bookId = document.getElementById("bookId").value;
@@ -48,12 +47,6 @@ function saveBooks(event) {
 
     // Lấy danh sách sách hiện có từ localStorage
     let books = JSON.parse(localStorage.getItem("books")) || [];
-
-    // Kiểm tra xem sách với ID đã có chưa
-    if (books.find(b => b.id === bookId)) {
-        alert("A book with this ID already exists.");
-        return;
-    }
 
     // Thêm sách mới vào danh sách
     books.push(book);
