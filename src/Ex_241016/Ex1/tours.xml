@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="tours.xsl" type="text/xsl"?>
+
+<tours xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="tours.xsd">
+
+    <tour id="1">
+        <name>Fansipan Adventure</name>
+        <location>Sapa, Vietnam</location>
+        <description>Chinh phục đỉnh Fansipan - nóc nhà Đông Dương.</description>
+        <price>300</price>
+        <duration>3</duration>
+        <image>images/fansipan.jpg</image>
+        <rating>5</rating>
+    </tour>
+    <tour id="2">
+        <name>Phong Nha Exploration</name>
+        <location>Quang Binh, Vietnam</location>
+        <description>Khám phá động Phong Nha kỳ vĩ.</description>
+        <price>200</price>
+        <duration>2</duration>
+        <image>images/phongnha.jpg</image>
+        <rating>4</rating>
+    </tour>
+</tours>

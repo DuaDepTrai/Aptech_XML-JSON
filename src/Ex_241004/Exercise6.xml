@@ -20,3 +20,10 @@
         <phan_so tu_so="5" mau_so="7"/>
     </tich>
 </bieu_thuc>
+
+<?xml version="1.0"?>
+<book>
+    <Title> Tiêu đề </Title>
+    <Author> Tác giả </Author>
+    <Description> Mô tả chi tiết</Description>
+</book>

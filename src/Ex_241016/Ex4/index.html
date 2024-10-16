@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Management</h1>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>GPA</th>
+                <th>Major</th>
+                <th>Subjects</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        // Đọc dữ liệu từ JSON (cách giả lập)
+        fetch('students.json')
+            .then(response => response.json())
+            .then(students => {
+                const tableBody = document.querySelector("#studentTable tbody");
+
+                students.forEach(student => {
+                    const row = document.createElement("tr");
+
+                    // Thêm màu nền xanh nhạt nếu GPA >= 3.5
+                    if (student.gpa >= 3.5) {
+                        row.classList.add("high-gpa");
+                    }
+
+                    // Tạo nội dung hàng
+                    row.innerHTML = `
+                        <td>${student.id}</td>
+                        <td>${student.name}</td>
+                        <td>${student.age}</td>
+                        <td>${student.gender}</td>
+                        <td>${student.gpa}</td>
+                        <td>${student.major}</td>
+                        <td>
+                            <ul>
+                                ${student.subjects.map(subject => `
+                                    <li>${subject.name}: ${subject.score}</li>
+                                `).join('')}
+                            </ul>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error loading students.json:', error));
+    </script>
+</body>
+</html>

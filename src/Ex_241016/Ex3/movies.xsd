@@ -1,0 +1,63 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+
+    <xs:element name="movies">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="movie"  maxOccurs="unbounded">
+
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:element name="genre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Action"/>
+                                        <xs:enumeration value="Sci-fi"/>
+                                        <xs:enumeration value="Drama"/>
+                                        <xs:enumeration value="Crime"/>
+                                        <xs:enumeration value="Comedy"/>
+                                        <xs:enumeration value="Romance"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="director" type="xs:string"/>
+                            <xs:element name="releaseDate">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{4}-\d{2}-\d{2}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="rating">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:minInclusive value="1"/>
+                                        <xs:maxInclusive value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="duration">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:positiveInteger"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="poster">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:anyURI"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="description" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:positiveInteger"/>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>        
+    </xs:element>
+</xs:schema>

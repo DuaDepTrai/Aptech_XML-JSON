@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Nguyen Van A",
+        "age": 20,
+        "gender": "Male",
+        "gpa": 3.5,
+        "major": "Computer Science",
+        "subjects": [
+            { "name": "Math", "score": 9 },
+            { "name": "Programming", "score": 8 }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Tran Thi B",
+        "age": 22,
+        "gender": "Female",
+        "gpa": 3.8,
+        "major": "Information Technology",
+        "subjects": [
+            { "name": "Networking", "score": 8.5 },
+            { "name": "Database", "score": 9 }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Le Van C",
+        "age": 21,
+        "gender": "Other",
+        "gpa": 2.8,
+        "major": "Software Engineering",
+        "subjects": [
+            { "name": "Algorithms", "score": 7 },
+            { "name": "Software Design", "score": 6.5 }
+        ]
+    }
+]

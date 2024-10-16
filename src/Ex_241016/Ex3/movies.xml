@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="movies.xsl" type="text/xsl"?>
+
+<movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="movies.xsd"> 
+    <movie id="1">
+        <title>Inception</title>
+        <genre>Sci-fi</genre>
+        <director>Christopher Nolan</director>
+        <releaseDate>2010-07-16</releaseDate>
+        <rating>9</rating>
+        <duration>148</duration>
+        <poster>https://example.com/poster1.jpg</poster>
+        <description>A thief who steals corporate secrets through dream-sharing technology is given a chance to erase his criminal history by implanting an idea into a target's subconscious.</description>
+    </movie>
+    <movie id="2">
+        <title>The Godfather</title>
+        <genre>Crime</genre>
+        <director>Francis Ford Coppola</director>
+        <releaseDate>1972-03-24</releaseDate>
+        <rating>9.2</rating>
+        <duration>175</duration>
+        <poster>https://example.com/poster2.jpg</poster>
+        <description>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</description>
+    </movie>
+</movies>
